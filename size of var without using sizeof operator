@@ -1,0 +1,42 @@
+integer:
+
+#include<stdio.h>
+int main()
+{
+    int a[]={1,2,3,4,5,67};
+    printf("the size of array without using size of operator: %ld",(char*)(&a+1)-(char*)(&a));
+}
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    char a[]="kirankumar";
+    int b=0;
+for(int i=0;a[i]!='\0';i++)
+{
+    b++;
+}
+printf("%d",b);
+}
+
+character:
+
+#include<stdio.h>
+int main()
+{
+    char a[]={'a','a','a'};
+    printf("the size of array without using size of operator: %ld",(char*)(&a+1)-(char*)(&a));
+}
+
+
+string:
+
+#include<stdio.h>
+int main()
+{
+    char a[]="kirankumar";
+    printf("the size of array without using size of operator: %ld",(char*)(&a+1)-(char*)(&a));
+}
