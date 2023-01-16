@@ -1,0 +1,14 @@
+#include<stdio.h>
+int power(int a)
+{
+    
+    (a&&(a&(a-1))==0)?printf("power of 2"):printf("not a power of 2");
+}
+int main()
+{
+    int a;
+    printf("enter the number:");
+    scanf("%d",&a);
+    int (*fptr)(int)=power;
+    fptr(a);
+}
