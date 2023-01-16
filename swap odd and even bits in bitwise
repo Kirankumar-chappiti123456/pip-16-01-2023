@@ -1,0 +1,19 @@
+#include<stdio.h>
+int swapeo(int n1)
+{
+    int even=n1&0xAAAAAAAA;
+    int odd=n1&0X55555555;
+    even>>=1;
+    odd<<=1;
+    int k=even|odd;
+    printf("%d",k);
+    
+}
+int main()
+{
+    int n1;
+    printf("enter the number:");
+    scanf("%d",&n1);
+    int (*fptr)(int)=swapeo;
+    fptr(n1);
+}
